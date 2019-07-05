@@ -24,12 +24,17 @@ class Libro(object):
         self.autor = valor3
 
 
-""" Este funciónn se comprueba que es numerico
- el campo de autor"""
+#
+# Este funciónn se comprueba que es numerico
+# el campo de autor
+#
+
+
     def computor(self):
         if str(self.autor).isdigit():
             return True
-        else("Este campo es un codigo")
+        else:
+            return ("Este campo es un codigo")
 
 
     def __init__(self, nuevotitulo, nuevoautor, nuevoisbn):
@@ -37,29 +42,36 @@ class Libro(object):
         self.titulo = nuevotitulo
         self.isbn = nuevoisbn
 
-"""Esta funcion comprueba que el isbn10 es valido"""
+# """Esta funcion comprueba que el isbn10 es valido"""
     def compisb10(self):
         if len(self.isbn)== 10:
             return True
-        else ("Este campo tiene que tener 10 digitos")
+        else:
+            return ("Este campo tiene que tener 10 digitos")
 
-"""Esta funcion comprueba que el isbn13 es valido"""
+# """Esta funcion comprueba que el isbn13 es valido"""
     def comisb13(self):
         if len(self.isbn) == 13:
             return True
-        else ("Este campo tiene que tener 13 digitos")
+        else:
+            return ("Este campo tiene que tener 13 digitos")
 
-"""Esta funcion comprueba que el isbn es valido con isbn10 y el isbn13"""
-    def comprobarisnb():
-        if compisb10(isbn) or comisb13(isbn) == True:
+# """Esta funcion comprueba que el isbn es valido con isbn10 y el isbn13"""
+    def comprobarisnb(self):
+        if self.compisb10(self.isbn) or self.comisb13(self.isbn) == True:
             return True
-        else ("Eror en los campos de Isnb")
+        else:
+            return ("Eror en los campos de Isnb")
 
 
+#
+#     del validarisbn():
+#
+#         if len(self.isbn)== 10:
+#         if self.isnb('^\d{9}[\d,X]{1}$',self.isnb).match:
+# #         sum = 0
 
-    del validarisbn():
-    valor = ""
-    if len(valor)> 10
+
 
 
 #

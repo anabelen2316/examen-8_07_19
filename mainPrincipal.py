@@ -8,7 +8,8 @@ from autor import *
 
 class Principal():
     def main(self):
-        pass
+        sombrasana = Libro()
+        sombrasana.
 
 
 
