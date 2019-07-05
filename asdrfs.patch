@@ -1,0 +1,12 @@
+Index: autor.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- autor.py	(date 1562321974000)
++++ autor.py	(date 1562322004250)
+@@ -35,3 +35,4 @@
+ 
+ 
+ 
++
