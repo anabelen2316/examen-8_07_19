@@ -1,8 +1,8 @@
 # Ana Reyes
+from autor import *
 
 
-
-class Libro(object):
+class Libro(Autor):
     isnb = ""
     titulo = ""
     autor = 0
@@ -24,43 +24,49 @@ class Libro(object):
         self.autor = valor3
 
 
-""" Este funciónn se comprueba que es numerico
- el campo de autor"""
+
     def computor(self):
+        """ Este funciónn se comprueba que es numerico el
+         campo de autor """
         if str(self.autor).isdigit():
             return True
-        else("Este campo es un codigo")
+        else:
+            return ("Este campo es un codigo")
 
 
-    def __init__(self, nuevotitulo, nuevoautor, nuevoisbn):
-        self.autor = nuevoautor
-        self.titulo = nuevotitulo
-        self.isbn = nuevoisbn
+    def __init__(self,titulo,autor, isbn):
+        self.autor = autor
+        self.titulo = titulo
+        self.isbn = isbn
 
-"""Esta funcion comprueba que el isbn10 es valido"""
+# """Esta funcion comprueba que el isbn10 es valido"""
     def compisb10(self):
         if len(self.isbn)== 10:
             return True
-        else ("Este campo tiene que tener 10 digitos")
+        else:
+            return ("Este campo tiene que tener 10 digitos")
 
-"""Esta funcion comprueba que el isbn13 es valido"""
+# """Esta funcion comprueba que el isbn13 es valido"""
     def comisb13(self):
         if len(self.isbn) == 13:
             return True
-        else ("Este campo tiene que tener 13 digitos")
+        else:
+            return ("Este campo tiene que tener 13 digitos")
 
-"""Esta funcion comprueba que el isbn es valido con isbn10 y el isbn13"""
-    def comprobarisnb():
-        if compisb10(isbn) or comisb13(isbn) == True:
-            return True
-        else ("Eror en los campos de Isnb")
-
-
-
-    del validarisbn():
-    valor = ""
-    if len(valor)> 10
-
+# """Esta funcion comprueba que el isbn es valido con isbn10 y el isbn13"""
+#     def comprobarisnb():
+#         if compisb10(isbn) or comisb13(isbn) == True:
+#             return True
+#         else:
+#             return ("Eror en los campos de Isnb")
+#
+#
+#
+#     del validarisbn(self):
+#     valor = ""
+#     if len(valor)> 10:
+#         pass
+#
 
 #
 # def isValidISBN(code):

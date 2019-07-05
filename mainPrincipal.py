@@ -4,12 +4,34 @@ from autor import *
 
 
 
+pepe = Autor()
+pepe.set_nombre("Antonio")
+pepe.set_apellido("Rodrigez")
+pepe.set_identificador(456)
+pepe.set_nacimiento("8 de diciembre del 2019")
+print("Tu Nombre es :", pepe.get_nombre())
+print("Tu Apellido es :", pepe.get_apellido())
+print("Tu identificador es :", int(pepe.get_identificador()))
+print("Tu nacimiento es en :",pepe.get_nacimiento())
 
 
-class Principal():
-    def main(self):
-        pass
 
+librito = Libro(autor="ana",titulo="50 sombras de Ana",isbn="1234567890")
+# librito.set_autor("Ana")
+# librito.set_isbn("1234567890")
+librito.set_titular("Ankilionatylia")
+print("El autor es :", int(librito.get_autor()))
+print("Tu Titulares es :", librito.get.titular())
+print("El ISNB es :", int(librito.get_isnb()))
+
+
+
+
+
+# class Principal():
+#     def main(self):
+#         pass
+#
 
 
 
