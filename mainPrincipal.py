@@ -9,7 +9,7 @@ from autor import *
 class Principal():
     def main(self):
         sombrasana = Libro()
-        sombrasana.
+        sombrasana.autor("Anatinio")
 
 
 
